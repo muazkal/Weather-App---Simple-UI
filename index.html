@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+
+    <title>Project 1: Weather App</title>
+</head>
+<body>
+
+    <main>
+        <header>
+            <img src="\JSFinalProject\Project1WeatherApp\images\SimpleWeatherLogo.svg" class="img-logo" alt="logo">
+            <form>
+                <input id="locationSearchInput" name ="locationSearchInput" type="text" placeholder="Enter a city name...">
+                <button id='searchButton'>Search</button>
+                <div class="searchError"></div>
+            </form>
+        </header>
+
+        <div class="weatherDetails">
+
+            <div class="unitsToggle">
+                <div class="fToggle active">F</div>
+                <div class="cToggle unactive">C</div>
+            </div>
+
+            <div class="locationOutput">
+                <div class="cityOutput"></div>
+                <div class="countryOutput"></div>
+            </div>
+
+           
+
+            <div class="temperatureDisplayCards">
+                
+                <div class="lowTempCard">
+                    <div class="lowTempLabel">Low</div>
+                    <div class="lowTempOutput"></div>
+                </div>
+
+                <div class="currentTempCard">
+                    <div class="currentTempOutput"></div>
+                </div>
+
+                <div class="highTempCard">
+                    <div class="highTempLabel">High</div>
+                    <div class="highTempOutput"></div>
+                </div>
+
+            </div>
+
+
+            <div class="dateTimeContainer">
+
+                <div class="dateTimeOutput">
+                    <span class="dateTimeOutput"></span>
+                </div>
+                
+            </div>
+
+            <div class="weatherMetrics">
+
+                <div class="feelsLikeCard metricsCard">
+                    <img src="\JSFinalProject\Project1WeatherApp\images\Feels Like.svg" alt="feels like icon">
+                    <div class="metricsLabel">Feels Like</div>
+                    <div class="feelsLikeOutput metricOutput"></div>
+                </div>
+
+                <div class="windCard metricsCard">
+                    <img src="\JSFinalProject\Project1WeatherApp\images\Wind.svg" alt="wind icon">
+                    <div class="metricsLabel">Wind (m/h)</div>
+                    <div class="windOutput metricOutput"></div>
+                </div>
+
+                <div class="humidityCard metricsCard">
+                    <img src="\JSFinalProject\Project1WeatherApp\images\Humidity.svg" alt="humidity icon">
+                    <div class="metricsLabel">Humidity</div>
+                    <div class="humidityOutput metricOutput"></div>
+                </div>
+
+                <div class="precipitationCard metricsCard">
+                    <img src="\JSFinalProject\Project1WeatherApp\images\Precipitation.svg" alt="precipitation icon">
+                    <div class="metricsLabel">Precipitation</div>
+                    <div class="precipitationOutput metricOutput"></div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <footer>
+            <div class='footerMessage'>Made with ❤️ by Muaz</div>
+            <div>&copy; 2026 All Rights Reserved</div>
+        </footer>
+    </main>
+    
+    <script src='main.js'></script>
+</body>
+</html>
